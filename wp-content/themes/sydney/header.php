@@ -19,6 +19,7 @@
 
 <body <?php body_class(); ?> <?php sydney_do_schema( 'html' ); ?>>
 
+
 <span id="toptarget"></span>
 
 <?php wp_body_open(); ?>

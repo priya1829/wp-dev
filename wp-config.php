@@ -70,7 +70,7 @@ define( 'WP_MEMORY_LIMIT', '256M' );
  */
 $table_prefix = 'wp_';
 
-/**
+/** 
  * For developers: WordPress debugging mode.
  *
  * Change this to true to enable the display of notices during development.
@@ -83,6 +83,9 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+define('WP_DEBUG_LOG', false);
+define('WP_DEBUG_DISPLAY', false);
+$_SERVER['HTTPS']='on';
 
 
 /* Add any custom values between this line and the "stop editing" line. */

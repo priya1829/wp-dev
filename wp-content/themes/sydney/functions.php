@@ -791,3 +791,11 @@ add_action( 'admin_post_submit_contact_form', 'handle_contact_form_submission' )
 
 
 ?>
+
+<?php
+function sydney_child_enqueue_styles() {
+    wp_enqueue_style('sydney-parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_style('sydney-child-style', get_stylesheet_directory_uri() . '/style.css', array('sydney-parent-style'));
+}
+add_action('wp_enqueue_scripts', 'sydney_child_enqueue_styles');
+

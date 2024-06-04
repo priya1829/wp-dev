@@ -260,7 +260,7 @@ sydney.removePreloader = {
             pr.classList.add('disable');
             setTimeout(function() {
                 pr.style.display = 'none';
-            }, 600);
+            }, 1000);
         });
     },
 };
